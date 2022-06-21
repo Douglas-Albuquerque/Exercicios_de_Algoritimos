@@ -10,6 +10,6 @@ inicio
       QC <- C*(A*365)
       QM <- QC*10
       QD <- QM/1440
-      Escreva("O usuario de cigarro pedeu ",QD," dias de vida!")
+      Escreva("O usuario de cigarro pedeu ",QD:4:2," dias de vida!")
 
 fimalgoritmo

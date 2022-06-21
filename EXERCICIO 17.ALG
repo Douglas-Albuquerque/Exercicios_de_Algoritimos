@@ -1,16 +1,19 @@
 algoritmo "EXERCICIO 17"
 var
    V1, V2, ML: real
-   AC, AB: logico
 inicio
 
       Escreva("Qual a velocidade do carro? ")
       Leia(V1)
-      AC <- (V1>80)
-      AB <- (V1<=80)
       V2 <- V1-80
       ML <- V2*5
-      Escreval("Você foi multado? ",AC," e Pagará: R$",ML)
-      Escreval("Você não foi multado? ",AB)
+      se V1 > 80 então
+         Escreval("Você ultrapassou o limite de velocidade.")
+         Escreva("Você pagará uma multa de R$",ML)
+         senao
+         Escreva("Você esta abixo do limite de velocidade permitido.")
+      fimse
+
+
 
 fimalgoritmo
